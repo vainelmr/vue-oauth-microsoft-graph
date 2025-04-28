@@ -15,5 +15,4 @@ export default {
         margin: 0;
         padding: 40px;
     }
-    
 </style>
