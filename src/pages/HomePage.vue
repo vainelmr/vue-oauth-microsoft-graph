@@ -10,6 +10,10 @@ export default {
     name: 'HomePage'
 }
 </script>
-<style lang="">
+<style scoped>
+    * {
+        margin: 0;
+        padding: 40px;
+    }
     
 </style>
