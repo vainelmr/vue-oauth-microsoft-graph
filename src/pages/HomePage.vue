@@ -30,12 +30,20 @@ export default {
         BaseButton,
         AsyncButton,
     },
+    data() {
+        return {
+            clickCount: 0,
+            isProcessing: false 
+        };
+    },
     methods: {
     asyncOperation() {
       return new Promise((resolve) => {
+        this.isProcessing = true;
         setTimeout(() => {
           resolve();
-        }, 2000);
+        }, 2000 + this.clickCount * 1000);
+        this.clickCount++;
       });
     },
   },
