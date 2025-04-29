@@ -6,14 +6,19 @@
         </div>
         <div class="header-right">
             <font-awesome-icon icon="fa-solid fa-user" class="user-icon" />
-            <span class="login-status">Not yet logged in</span>
+            <signInButton />
         </div>
     </div>
 </template>
  
 <script>
+import SignInButton from './SignInButton.vue';
+
 export default {
     name: 'BaseHeader',
+    components: {
+        SignInButton
+    },
 }
 </script>
  
